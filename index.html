@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Pizzaria</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <div class="topnav">
+        <a class="active" href="#">Pizzaria</a>
+        <div class="topnav-right">
+            <a href="#viewblock">View Menu</a>
+            <a href="#addTopings">Add Menu</a>
+        </div>
+    </div>
+    <table style="width:100%">
+        <tr>
+            <div class="row" id="viewblock">
+                <div class="img_div">
+                    <th>
+                        <img class="img-responsive"
+                            src="https://lh3.googleusercontent.com/-G0LkmkIZYIY/YGS8YdGX8VI/AAAAAAAAES0/X-h7giVo5eUp1-OKkvfiVK_2321_Oh-SgCLcBGAsYHQ/s0/pizza.png?authuser=0"
+                            width=500px height=500px>
+                    </th>
+                </div>
+                <div class="menu_div">
+                    <th>
+                        <button id="menu_list" onclick="getmenu()">Show Menu</button>
+                    <div id="display_menu"></div>
+
+                    </th>
+                </div>
+        </tr>
+    </table>
+    <table>
+        <tr class="row justify-content-center">
+            <td>
+                <div class="col-4" id="addTopings">
+                    <div class="block1">
+                        <input id="add_item" type="text" placeholder="Type here to add toppings?" /></br>
+                        <button id="add_toppings" onclick="add_item()">Recommend a new Pizza</button>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="col-4" id="display_addedmenu">
+
+                </div>
+            </td>
+        </tr>
+    </table>
+    </div>
+    <div class="block2">
+        <div id="display_addedmenu">
+        </div>
+    </div>
+    <div>
+        <center>
+        <img class="img-responsive"
+            src="https://lh3.googleusercontent.com/-mj17F075cq4/YGS8dbjoDaI/AAAAAAAAETM/-Ob4bN0GTUw5dv9EwbltCC00afXHKhTGACLcBGAsYHQ/s0/topping.png?authuser=0"
+            width=800px height=800px>
+        </center>
+    </div>
+
+</body>
+
+</html>
